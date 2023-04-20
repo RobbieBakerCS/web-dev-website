@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    background-color: #5e5e5e;
+}
+
+#topbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #202020;
+}
+
+#title {
+    color: #ffc116;
+    font-family: Tahoma;
+    font: 700;
+}
+
+#gamenews {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: baseline;
+    gap: 10px;
+}
+
+#gamenews h1 {
+    align-self: flex-start;
+}
+
+#gamenews article {
+    background-color: #ffc116;
+}
+
+nav {
+    margin: -20px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+h1 {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+article img {
+    width: 98%;
+}
+
+.date {
+    font-size: 12px;
+    font-style: italic;
+}
+
+footer {
+    color: white;
+    clear: both;
+    padding: 1px;
+    background-color: #3b3b3b;
+    text-align: center;
+}
