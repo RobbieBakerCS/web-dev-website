@@ -18,13 +18,20 @@ body {
     font: 700;
 }
 
+#gameguide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #gamenews {
     width: 75%;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    align-items: baseline;
-    align-content: baseline;
+    align-items: center;
+    align-content: center;
     gap: 10px;
 }
 
@@ -34,17 +41,37 @@ body {
 
 #gamenews article {
     background-color: #ffc116;
+    padding: 0px 10px;
+    margin: 5px 0px;
+    height: 725px;
 }
 
-nav {
-    margin: -20px;
-    font-size: 25px;
-    color: #FFFFFF;
+#gamenews p {
+    color: #3b3b3b;
 }
 
-nav ul li {
-    display: inline-block;
-    padding: 5px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1d1d1d;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ffc116;
 }
 
 h1 {
@@ -53,7 +80,7 @@ h1 {
 }
 
 p {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 article img {
