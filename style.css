@@ -13,7 +13,7 @@ body {
 }
 
 #title {
-    color: #ffc116;
+    color: #1d8ef1;
     font-family: Tahoma;
     font: 700;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 #gamenews article {
-    background-color: #ffc116;
+    background-color: #1d8ef1;
     padding: 0px 10px;
     margin: 5px 0px;
     height: 725px;
@@ -71,7 +71,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #ffc116;
+    background-color: #1d8ef1;
 }
 
 h1 {
