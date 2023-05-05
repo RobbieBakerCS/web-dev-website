@@ -25,6 +25,27 @@ body {
     align-items: center;
 }
 
+#gameguide img {  
+    animation: zoom 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+  
+@keyframes zoom {
+    to {
+        transform: scale(1.25);
+    }
+}
+
+/*https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
+https://stackoverflow.com/questions/22492498/css-resize-zoom-in-effect-on-image-while-keeping-dimensions
+*/
+
+.hide_overflow {
+    display: inline-block;
+    overflow: hidden;
+}
+
 #gamenews {
     width: 75%;
     display: flex;
