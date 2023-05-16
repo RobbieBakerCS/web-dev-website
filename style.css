@@ -3,6 +3,11 @@ body {
     background-color: #5e5e5e;
 }
 
+.darkMode {
+    background-color: #FFFFFF;
+    color: #1d1d1d;
+}
+
 #topbar {
     display: flex;
     flex-direction: column;
@@ -10,6 +15,11 @@ body {
     align-items: center;
     padding: 5px;
     background-color: #202020;
+}
+
+#darkModeButton {
+    align-self: flex-end;
+    margin: -50px 25px 0px 0px;
 }
 
 #title {
@@ -71,7 +81,7 @@ body {
   
 @keyframes zoom {
     to {
-        transform: scale(1.25);
+        transform: scale(1.5);
     }
 }
 
