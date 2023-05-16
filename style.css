@@ -167,3 +167,23 @@ footer {
     background-color: #3b3b3b;
     text-align: center;
 }
+
+#brushSelection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mapSelection {
+    margin: 0px 0px 0px 60px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#temp {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
