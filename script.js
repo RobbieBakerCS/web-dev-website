@@ -120,4 +120,28 @@ function clearCanvas() {
   clearCanvasButton.style.transform = 'rotate(360deg)';
 }
 
+function map1Switch() {
+  background.src = "assets/Border_Map.webp";
+  ctx.drawImage(background,0,0);
+  map1Button.style.border = "2px solid #ffffff";
+  map2Button.style.border = "0px";
+  map3Button.style.border = "0px";
+}
+
+function map2Switch() {
+  background.src = "assets/image_placeholder.png";
+  ctx.drawImage(background,0,0);
+  map1Button.style.border = "0px";
+  map2Button.style.border = "2px solid #ffffff";
+  map3Button.style.border = "0px";
+}
+
+function map3Switch() {
+  background.src = "assets/image_placeholder.png";
+  ctx.drawImage(background,0,0);
+  map1Button.style.border = "0px";
+  map2Button.style.border = "0px";
+  map3Button.style.border = "2px solid #ffffff";
+}
+
 //https://stackoverflow.com/questions/2368784/draw-on-html5-canvas-using-a-mouse
