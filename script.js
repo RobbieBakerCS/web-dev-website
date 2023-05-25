@@ -58,7 +58,7 @@ document.addEventListener('mouseenter', setPosition);
 // new position from mouse event
 function setPosition(e) {
   pos.x = e.clientX-60;
-  pos.y = e.clientY-155;
+  pos.y = e.clientY-178;
 }
 
 // resize canvas
