@@ -67,6 +67,7 @@ function resize() {
   ctx.canvas.height = window.innerHeight;
 }
 
+ctx.strokeStyle = '#ff0000';
 function draw(e) {
   // mouse left button must be pressed
   if (e.buttons !== 1) return;
@@ -75,13 +76,48 @@ function draw(e) {
 
   ctx.lineWidth = 5;
   ctx.lineCap = 'round';
-  ctx.strokeStyle = '#ff0000';
 
   ctx.moveTo(pos.x, pos.y); // from
   setPosition(e);
   ctx.lineTo(pos.x, pos.y); // to
 
   ctx.stroke(); // draw it!
+}
+
+brush1Button = document.getElementById("brush1");
+brush2Button = document.getElementById("brush2");
+brush3Button = document.getElementById("brush3");
+
+map1Button = document.getElementById("map1");
+map2Button = document.getElementById("map2");
+map3Button = document.getElementById("map3");
+
+function brush1Switch() {
+  ctx.strokeStyle = '#ff0000';
+  brush1Button.style.border = "2px solid #ff0000";
+  brush2Button.style.border = "0px";
+  brush3Button.style.border = "0px";
+}
+
+function brush2Switch() {
+  ctx.strokeStyle = '#00bd0d';
+  brush1Button.style.border = "0px";
+  brush2Button.style.border = "2px solid #00bd0d";
+  brush3Button.style.border = "0px";
+}
+
+function brush3Switch() {
+  ctx.strokeStyle = '#002cbd';
+  brush1Button.style.border = "0px";
+  brush2Button.style.border = "0px";
+  brush3Button.style.border = "2px solid #002cbd";
+}
+
+clearCanvasButton = document.getElementById("clearCanvas");
+function clearCanvas() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(background,0,0);
+  clearCanvasButton.style.transform = 'rotate(360deg)';
 }
 
 //https://stackoverflow.com/questions/2368784/draw-on-html5-canvas-using-a-mouse
