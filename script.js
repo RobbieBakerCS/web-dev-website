@@ -129,7 +129,7 @@ function map1Switch() {
 }
 
 function map2Switch() {
-  background.src = "assets/Chalet_Map.png";
+  background.src = "assets/Chalet_Map.webp";
   ctx.drawImage(background,0,0);
   map1Button.style.border = "0px";
   map2Button.style.border = "2px solid #ffffff";
@@ -137,7 +137,7 @@ function map2Switch() {
 }
 
 function map3Switch() {
-  background.src = "assets/House_Map.webp";
+  background.src = "assets/House_Map.png";
   ctx.drawImage(background,0,0);
   map1Button.style.border = "0px";
   map2Button.style.border = "0px";
