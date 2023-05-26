@@ -26,14 +26,14 @@ function darkModeFunc() {
 
 const canvas = document.getElementById("plannerCanvas");
 // then the Canvas Context - this lets us draw
-const ctx = canvas.getContext("2d");
+//const ctx = canvas.getContext("2d");
 
 var background = new Image();
-background.src = "assets/Border_Map.webp";
+background.src = "assets/Transparent_Image.png";
 
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function(){
-    ctx.drawImage(background,0,0);   
+    ctx.drawImage(background,0,0);
 }
 
 //var canvas = document.createElement('canvas');
@@ -44,8 +44,9 @@ document.body.style.margin = 0;
 //canvas.style.position = 'fixed';
 
 // get canvas 2D context and set him correct size
-//var ctx = canvas.getContext('2d');
-//resize();
+var ctx = canvas.getContext('2d');
+resize()
+
 
 // last known position
 var pos = { x: 0, y: 0 };
@@ -57,17 +58,20 @@ document.addEventListener('mouseenter', setPosition);
 
 // new position from mouse event
 function setPosition(e) {
-  pos.x = e.clientX-60;
-  pos.y = e.clientY-178;
+  pos.x = e.clientX-65;
+  pos.y = e.clientY-60;
 }
 
 // resize canvas
 function resize() {
-  ctx.canvas.width = window.innerWidth;
-  ctx.canvas.height = window.innerHeight;
+  ctx.canvas.width = window.innerWidth-80;
+  ctx.canvas.height = window.innerHeight-75;
 }
 
+
 ctx.strokeStyle = '#ff0000';
+background.src = "assets/Border_Map.png";
+ctx.drawImage(background,0,0);
 function draw(e) {
   // mouse left button must be pressed
   if (e.buttons !== 1) return;
@@ -121,15 +125,18 @@ function clearCanvas() {
 }
 
 function map1Switch() {
-  background.src = "assets/Border_Map.webp";
+  background.src = "assets/Border_Map.png";
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(background,0,0);
+  resize()
   map1Button.style.border = "2px solid #ffffff";
   map2Button.style.border = "0px";
   map3Button.style.border = "0px";
 }
 
 function map2Switch() {
-  background.src = "assets/Chalet_Map.webp";
+  background.src = "assets/Chalet_Map.png";
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(background,0,0);
   map1Button.style.border = "0px";
   map2Button.style.border = "2px solid #ffffff";
@@ -138,6 +145,7 @@ function map2Switch() {
 
 function map3Switch() {
   background.src = "assets/House_Map.png";
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.drawImage(background,0,0);
   map1Button.style.border = "0px";
   map2Button.style.border = "0px";
