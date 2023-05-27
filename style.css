@@ -39,6 +39,12 @@ body {
     align-items: center;
 }
 
+#landing img {  
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
 #landing ul {
     list-style-type: none;
     margin: 400px 0px 0px 0px;
@@ -73,8 +79,16 @@ body {
     align-items: center;
 }
 
-#gameguide img {  
+.imageBG {  
     animation: zoom 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    filter: blur(1.5px);
+}
+
+.imageText { 
+    opacity: 0.75;
+    animation: textOpa 1s linear infinite;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
 }
@@ -85,6 +99,12 @@ body {
     }
 }
 
+@keyframes textOpa {
+    to {
+        opacity: 1;
+    }
+}
+
 /*https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
 https://stackoverflow.com/questions/22492498/css-resize-zoom-in-effect-on-image-while-keeping-dimensions
 */
@@ -92,6 +112,21 @@ https://stackoverflow.com/questions/22492498/css-resize-zoom-in-effect-on-image-
 .hide_overflow {
     display: inline-block;
     overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.imageBG {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.imageText {
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
 #mainID h1 {
@@ -107,6 +142,10 @@ https://stackoverflow.com/questions/22492498/css-resize-zoom-in-effect-on-image-
     align-items: center;
     align-content: center;
     margin: 0px 100px 0px 100px;
+}
+
+#gamenews p {
+    margin: 0px 0px 0px 0px;
 }
 
 #gamenews {
