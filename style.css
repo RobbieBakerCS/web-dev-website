@@ -276,24 +276,3 @@ footer {
     align-content: center;
     gap: 10px;
 }
-
-.column h1 {
-    align-self: flex-start;
-}
-
-.column article {
-    background-color: #1d8ef1;
-    padding: 0px 10px;
-    margin: 5px 0px;
-    border-radius: 15px;
-}
-
-.column p {
-    color: #3b3b3b;
-    margin: 0px 0px 0px 0px;
-}
-
-.column img {
-    height: 200px;
-    width: 350px;
-}
