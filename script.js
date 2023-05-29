@@ -7,6 +7,7 @@ const bodyElement = document.getElementById("bodyID");
 const mainElement = document.getElementById("mainID");
 const darkModeBtn = document.getElementById("darkModeButton")
 const darkModeImg = document.getElementById("darkModeImg")
+const darkModeTest = document.getElementsByClassName("darkModeTest")
 let darkMode = false;
 
 function darkModeFunc() {
