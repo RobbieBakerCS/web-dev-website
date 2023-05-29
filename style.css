@@ -284,3 +284,48 @@ form {
     align-items: center;
     align-content: center;
 }
+
+form label {
+    color: #ffffff;
+    margin: 10px 0px -20px 0px;
+}
+
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 2px solid #1d8ef1;
+}
+
+input[type=reset] {
+    width: 25%;
+    background-color: #1d8ef1;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #63b6ff;
+    color: #000000;
+}
