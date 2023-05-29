@@ -42,18 +42,22 @@
         </nav>
     </header>
     <main>
+        <!--Map selection buttons grouped as section-->
         <section id="mapSelection">
+            <!--href set to allow hover mouse change, triggers JS function on click-->
             <a id="map1" href="javascript:void(0);" onclick="map1Switch()"><img src="assets/Border_Map_Button.webp" alt="White Border text showing map selection" width="50" height="50"/></a>
             <a id="map2" href="javascript:void(0);" onclick="map2Switch()"><img src="assets/Chalet_Map_Button.webp" alt="White Chalet text showing map selection" width="50" height="50"/></a>
             <a id="map3" href="javascript:void(0);" onclick="map3Switch()"><img src="assets/House_Map_Button.webp" alt="White House text showing map selection" width="50" height="50"/></a>
         </section>
         <section id="temp">
             <section id="brushSelection">
+                <!--href set to allow hover mouse change, triggers JS function on click-->
                 <a id="brush1" href="javascript:void(0);" onclick="brush1Switch()"><img src="assets/Red_Pen.webp" alt="Red pen icon" width="50" height="50"/></a>
                 <a id="brush2" href="javascript:void(0);" onclick="brush2Switch()"><img src="assets/Green_Pen.webp" alt="Green pen icon" width="50" height="50"/></a>
                 <a id="brush3" href="javascript:void(0);" onclick="brush3Switch()"><img src="assets/Blue_Pen.webp" alt="Blue pen icon" width="50" height="50"/></a>
                 <a id="clearCanvas" href="javascript:void(0);" onclick="clearCanvas()"><img src="assets/Reset_Canvas.webp" alt="Reset icon" width="50" height="50"/></a>
             </section>
+            <!--Canvas created - JS formats it appropriately-->
             <canvas id="plannerCanvas" width="824" height="675"></canvas>
         </section>
     </main>

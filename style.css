@@ -5,7 +5,7 @@ body {
 
 .darkMode {
     background-color: #FFFFFF;
-    color: #1d1d1d;
+    color: #000000;
 }
 
 #topbar {
@@ -41,6 +41,7 @@ body {
 
 #landing img {  
     position: absolute;
+    top: 250px;
 }
 
 #landing ul {
@@ -162,7 +163,7 @@ https://stackoverflow.com/questions/22492498/css-resize-zoom-in-effect-on-image-
     padding: 0px 10px;
     margin: 5px 0px;
     border-radius: 15px;
-    height: 485px;
+    height: 575px;
 }
 
 #gamenews p {
